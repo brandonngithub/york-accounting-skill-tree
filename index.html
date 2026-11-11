@@ -23,6 +23,28 @@
 <body>
     <div class="wide-bg-colour">
         <h1 class="titl">York University Accounting Skill Tree <br> (Course Prerequisite List) </h1>
+        <div id="settings-bar">
+            <div id="zoom-size-div">
+                Zoom: <span id="zoom-value">1</span>x<br>
+                <input type="range" id="zoom-range-slider" min="0.35" max="2.0" value="1.0" step="0.05">
+            </div>
+        </div>
+        <div id="explain">
+            <div id="explain-main" style="display: none;">
+                <div id="explain-topp">
+                    ADMS 2320 (3.00)<br>
+                    Business Statistics
+                </div>
+                <div id="explain-desc">
+                </div>
+                <div id="explain-prereq-list-div">
+                    <span class="prereq-label">Prerequisites</span>
+                    <ul id="explain-prereq-list">
+                    </ul>
+                </div>
+            </div>
+            <div id="explain-hint">Click on a course to see its description here</div>
+        </div>
     </div>
     <div id="root" style="width: 86em; height: 99.5em;">
         <svg height="100%" width="100%" class="svgConns">
@@ -367,33 +389,7 @@
                 3595 3.00, AP/ADMS 4551 3.00, or 2) or other students, these above-listed courses and an average grade
                 of C+ or better in AP/ADMS 3585 3.00 and AP/ADMS 3595 3.00.</div>
         </div>
-
-
     </div>
-    <div id="explain">
-        <div id="explain-main" style="display: none;">
-            <div id="explain-topp">
-                ADMS 2320 (3.00)<br>
-                Business Statistics
-            </div>
-            <div id="explain-desc">
-            </div>
-            <div id="explain-prereq-list-div">
-                Prerequsites:
-                <ul id="explain-prereq-list">
-                </ul>
-            </div>
-        </div>
-        <div id="explain-hint">Click on a course to see its description here</div>
-    </div>
-
-    <div id="settings-bar">
-        <div id="zoom-size-div">
-            Zoom: <span id="zoom-value">1</span>x<br>
-            <input type="range" id="zoom-range-slider" min="0.35" max="2.0" value="1.0" step="0.05">
-        </div>
-    </div>
-
 </body>
 
 </html>

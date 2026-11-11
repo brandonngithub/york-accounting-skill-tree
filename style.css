@@ -3,7 +3,13 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
-    background: rgb(240, 247, 253);
+    background: rgb(59, 70, 78);
+    overflow-x: hidden;
+}
+
+html {
+    background: rgb(59, 70, 78);
+    overflow-x: hidden;
 }
 
 .titl {
@@ -14,6 +20,8 @@ body {
     font-weight: normal;
     left: 8rem;
     color: rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: middle;
 }
 
 div#root {
@@ -21,6 +29,7 @@ div#root {
     margin: 0;
     padding-right: calc(24vw + 2em);
     position: relative;
+    background: rgb(240, 247, 253);
 }
 
 .svgConns {
@@ -52,22 +61,17 @@ div#root .econ {
 }
 
 div#explain {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 21.5vw;
-    height: 50vh;
+    width: auto;
+    height: auto;
     border: 1px solid #c4c4c4;
     background-color: rgb(39, 45, 51);
     border-radius: 0.5em;
-    margin-right: 32px;
-    margin-bottom: 32px;
-    padding: 1rem;
+    margin: 1rem 32px;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    overflow-y: scroll;
+    overflow-y: visible;
     box-shadow: 0 10px 16px 3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 }
 
@@ -96,16 +100,14 @@ div#explain-hint {
 }
 
 div#settings-bar {
-    position: fixed;
-    right: 0;
-    top: 0;
+    position: relative;
     text-align: right;
     padding: 1rem;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin-top: 6px;
-    margin-right: 16px;
+    display: inline-flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+    margin: 0 16px 0 2rem;
 }
 
 div#zoom-size-div {
@@ -119,8 +121,7 @@ div#zoom-size-div {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 1em;
+    margin-top: 0;
 }
 
 #zoom-range-slider {
@@ -136,10 +137,20 @@ div#zoom-size-div {
     text-align: left;
     background-color: rgb(59, 70, 78);
     display: block;
+    position: relative;
     padding: 4px;
     margin-bottom: 56px;
 }
 
 #zoom-value {
     margin-left: 12px;
+}
+
+@media (min-width: 1100px) {
+    div#settings-bar {
+        position: absolute;
+        top: 1.5rem;
+        right: 16px;
+        margin: 0;
+    }
 }
