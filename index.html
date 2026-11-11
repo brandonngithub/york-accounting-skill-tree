@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>York University Accounting Skill Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Saira+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="app.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7GNRNGX6D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H7GNRNGX6D');
+    </script>
+</head>
+
+<body>
+    <div class="wide-bg-colour">
+        <h1 class="titl">York University Accounting Skill Tree <br> (Course Prerequisite List) </h1>
+    </div>
+    <div id="root" style="width: 86em; height: 99.5em;">
+        <svg height="100%" width="100%" class="svgConns">
+            <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" markerUnits="strokeWidth"
+                    orient="auto">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+                </marker>
+            </defs>
+        </svg>
+        <div class="classBox adms" id="adms1000" style="left: 2em; top: 2.0em;" prereq="">
+            <span class="course-code-full">ADMS 1000 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Business</span>
+            <div class="course-description" hidden="hidden">Provides an overview of the context within which modern
+                organizations operate. The course will examine the development of organizational and managerial
+                theories. A number of contemporary issues and the organizational responses will be discussed.</div>
+        </div>
+
+        <div class="classBox adms" id="adms1010" style="left: 16em; top: 2.0em;" prereq="">
+            <span class="course-code-full">ADMS 1010 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Exploring the Functions of Business</span>
+            <div class="course-description" hidden="hidden">Provides a broad survey of the functional areas of business
+                by engaging students in a critical discourse about management, its sub-disciplines, and the current
+                issues and future challenges facing business. It is intended to prepare students for success in the
+                upper-level BCom course requirements.</div>
+        </div>
+
+        <div class="classBox econ" id="econ1000" style="left: 30em; top: 2.0em;" prereq="">
+            <span class="course-code-full">ECON 1000 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Economics: Microeconomics</span>
+            <div class="course-description" hidden="hidden">An introduction to economic analysis covering the theory of
+                consumer and household behaviour, and the theory of the firm in perfectly and imperfectly competitive
+                industries. Course credit exclusions: AP/ECON 1000 3.00, GL/ECON 2500 3.00.</div>
+        </div>
+
+        <div class="classBox econ" id="econ1010" style="left: 44em; top: 2.0em;" prereq="">
+            <span class="course-code-full">ECON 1010 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Economics: Macroeconomics</span>
+            <div class="course-description" hidden="hidden">An introduction to economic analysis covering national
+                income determination and employment theory, money and banking, monetary and fiscal policy, economic
+                growth. Course credit exclusions: AP/ECON 1010 3.00, GL/ECON 2510 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms2200" style="left: 2em; top: 23.0em;" prereq="">
+            <span class="course-code-full">ADMS 2200 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introductory Marketing</span>
+            <div class="course-description" hidden="hidden">Covers the fundamentals of marketing theory, concepts and
+                management as applied to marketing's strategic role in meeting customer needs, including product (goods
+                and services), price, promotion, distribution, consumer, segmentation, positioning, ethics, research.
+                Includes the creation of an actual marketing plan.</div>
+        </div>
+
+        <div class="classBox adms" id="adms2320" style="left: 16em; top: 23.0em;" prereq="adms1000">
+            <span class="course-code-full">ADMS 2320 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Business Statistics</span>
+            <div class="course-description" hidden="hidden">An integrated approach to analyzing business problems from
+                various functional areas. Practical business problems are analyzed using quantitative techniques
+                including probability, statistical inference, estimation and regression (simple linear regression,
+                multiple linear regression and model building) as well as non-parametric approaches. Prerequisites:
+                AP/ADMS 1000 3.00; one 12U mathematics course or equivalent. Course credit exclusion: AP/ECON 2500 3.00.
+            </div>
+        </div>
+
+        <div class="classBox adms" id="adms2400" style="left: 30em; top: 23.0em;" prereq="adms1000 adms1010">
+            <span class="course-code-full">ADMS 2400 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Organizational Behaviour</span>
+            <div class="course-description" hidden="hidden">Introduces concepts of individual and group behaviour as
+                they affect performance in organizations. Topics covered include motivation, communication,
+                decision-making, leadership and structural issues. Lectures and case discussions are employed to develop
+                theoretical models and illustrate their use. Prerequisites: AP/ADMS 1000 3.00 and AP/ADMS1010 3.00; For
+                students in the BHRM program, AP/HRM1000. For BDEM and BPA students, AP/ADMS 1000 3.00. Course credit
+                exclusion: HH/PSYC 3570 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms2500" style="left: 44em; top: 23.0em;" prereq="">
+            <span class="course-code-full">ADMS 2500 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Financial Accounting</span>
+            <div class="course-description" hidden="hidden">An overview of the accounting discipline, useful to both
+                majors and non-majors. Includes accounting history, the uses of accounting information in personal and
+                business contexts and the rudiments of financial reporting. Note: AP/ADMS 1000 3.00 is not a
+                prerequisite for AP/ADMS 2500 3.00, but is strongly recommended. Course credit exclusions: AP/ADMS 1500
+                3.00, AP/ADMS 1550 3.00, GL/ECON 2710 3.00. </div>
+        </div>
+
+        <div class="classBox adms" id="adms2511" style="left: 58em; top: 23.0em;" prereq="adms1000">
+            <span class="course-code-full">ADMS 2511 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Management Information Systems</span>
+            <div class="course-description" hidden="hidden">Overview of information systems and technology: how
+                information systems are selected, designed and managed to provide information needed to run
+                organizations successfully. Topics include the strategic role of information systems; ethical
+                considerations; technology; information systems risks; and security control considerations.
+                Prerequisite: AP/ADMS 1000 3.00. Course credit exclusion: AP/ADMB 2511 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms2610" style="left: 72em; top: 23.0em;" prereq="adms1000">
+            <span class="course-code-full">ADMS 2610 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Elements of Law: Part One</span>
+            <div class="course-description" hidden="hidden">Seeks to give insight into the role of the lawyer in
+                relation to that of the judge, legislator and administrator in molding the law. Against this general
+                background various legal principles and theories are examined so as to equip the student to analyze and
+                define legal issues. Prerequisite: AP/ADMS 1000 3.00. PRIOR TO FALL 2013: Course credit exclusion:
+                AP/POLS 3165 6.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms2510" style="left: 2em; top: 30.0em;"
+            prereq="econ1000 adms2500 adms2320">
+            <span class="course-code-full">ADMS 2510 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Introduction to Management Accounting</span>
+            <div class="course-description" hidden="hidden">Managers require relevant information for planning,
+                controlling and decision-making purposes. This course examines the accounting techniques available to
+                satisfy those needs. Prerequisites: 1) AP/ECON 1000 3.00; 2) AP/ADMS 2500 3.00 and 3) AP/ADMS 2320 3.00.
+                Course credit exclusions: AP/ADMB 2510 3.00, AP/ADMS 1500 3.00, AP/ADMS 1550 3.00, GL/ECON 2720 3.00.
+            </div>
+        </div>
+
+        <div class="classBox adms" id="adms3351" style="left: 2em; top: 44.0em;" prereq="adms2320">
+            <span class="course-code-full">ADMS 3351 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Operations Management</span>
+            <div class="course-description" hidden="hidden">Management of operations in today's business environment
+                usually involves mathematical and statistical modeling. This course provides a working understanding of
+                the operations management models and techniques such as process analysis, quality management, aggregate
+                planning, inventory control, and material requirements planning. Prerequisite: AP/ADMS 2320 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3530" style="left: 16em; top: 44.0em;"
+            prereq="econ1000 econ1010 adms2500 adms2320">
+            <span class="course-code-full">ADMS 3530 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Finance</span>
+            <div class="course-description" hidden="hidden">The role of financial managers in accomplishing
+                organizational objectives, uses of financial statements, present value theory, risk/return analysis,
+                leverage, cost of capital, resource allocation models. Prerequisites: AP/ECON 1000 3.00; AP/ECON 1010
+                3.00; AP/ADMS 2500 3.00. Corequisite: AP/ADMS 2320 3.00. Course credit exclusions: AP/ADMB 3530 3.00,
+                AP/ECON 4400 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3660" style="left: 30em; top: 44.0em;" prereq="adms1000">
+            <span class="course-code-full">ADMS 3660 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Business Ethics and Corporate Social
+                Responsibility</span>
+            <div class="course-description" hidden="hidden">Introduces students to the relevance and importance of
+                business ethics and corporate social responsibility. The course applies moral theory to the treatment by
+                business of various stakeholder groups including: shareholders; employees; consumers; governments;
+                communities; and the natural environment. Prerequisite: AP/ADMS 1000 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3510" style="left: 44em; top: 44.0em;"
+            prereq="adms2320 adms2500 adms2510 econ1000 econ1010">
+            <span class="course-code-full">ADMS 3510 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Managerial Cost Accounting and Analysis</span>
+            <div class="course-description" hidden="hidden">A course in theories and techniques of cost accounting and
+                management accounting. Emphasis is placed on cost accumulation for purposes of (a) asset valuation and
+                income measurement, and (b) planning and control. Prerequisites: AP/ADMS 2320 3.00, AP/ADMS 2500 3.00,
+                AP/ADMS 2510 3.00; AP/ECON 1000 3.00, AP/ECON 1010 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3520" style="left: 58em; top: 44.0em;" prereq="">
+            <span class="course-code-full">ADMS 3520 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">An Overview of Canadian Income Taxation</span>
+            <div class="course-description" hidden="hidden">An overview of the taxation of personal and corporate
+                incomes of Canadian taxpayers, related tax planning and GST implications. NCR: Students who have
+                received credit for AP/ADMS 4561 3.00 or AP/ADMS 4562 3.00 may not subsequently take AP/ADMS 3520 3.00
+                for degree credit.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3585" style="left: 72em; top: 44.0em;" prereq="adms2500">
+            <span class="course-code-full">ADMS 3585 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Intermediate Financial Accounting I</span>
+            <div class="course-description" hidden="hidden">This course, in conjunction with AP/ADMS 3595 3.00, develops
+                thorough knowledge and understanding of generally accepted accounting principles and financial statement
+                analytical skills by examining various technical areas of financial accounting. Prerequisite: AP/ADMS
+                2500 3.00. Course credit exclusion: AP/ADMB 3585 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3000" style="left: 2em; top: 51.0em;"
+            prereq="adms1000 econ1000 econ1010">
+            <span class="course-code-full">ADMS 3000 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Directed Reading</span>
+            <div class="course-description" hidden="hidden">A reading and research course suited to students with
+                special interests. Students will select areas of study in consultation with an appropriate faculty
+                member. Prerequisites: 78 credits including AP/ADMS 1000 3.00, AP/ECON 1000 3.00, AP/ECON 1010 3.00, and
+                six credits in management science, or, for students with equivalent preparation, permission of the
+                Director of the School of Administrative Studies. Note: Students must be accepted by a faculty
+                supervisor before they can register in this course. The course transaction form for such courses must be
+                submitted with a note from the supervisor stating his/her willingness to perform this task. Permission
+                of the Director of the School of Administrative Studies is also required.</div>
+        </div>
+
+        <div class="classBox adms" id="adms3595" style="left: 2em; top: 58.0em;" prereq="adms3585">
+            <span class="course-code-full">ADMS 3595 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Intermediate Financial Accounting II</span>
+            <div class="course-description" hidden="hidden">This course is a continuation of AP/ADMS 3585 3.00. It
+                develops a thorough knowledge and understanding of generally accepted accounting principles and
+                financial statement reporting practices in Canada. Prerequisite: AP/ADMS 3585 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4900" style="left: 2em; top: 72.0em;"
+            prereq="econ1000 econ1010 adms2320">
+            <span class="course-code-full">ADMS 4900 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Management Policy Part I</span>
+            <div class="course-description" hidden="hidden">Strategy and policy identification, formulation, and
+                evaluation are developed through lectures and case discussions. Emphasis is on integration of
+                administrative studies subject areas with which the student has previously become familiar, to provide a
+                framework for the analysis of strategic problems of general management. Prerequisites: 78 credits
+                including AP/ECON 1000 3.00; AP/ECON 1010 3.00 and AP/ADMS 2320 3.00 (or equivalent).</div>
+        </div>
+
+        <div class="classBox adms" id="adms4000" style="left: 16em; top: 72.0em;"
+            prereq="adms1000 econ1000 econ1010">
+            <span class="course-code-full">ADMS 4000 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Directed Reading</span>
+            <div class="course-description" hidden="hidden">A reading and research course suited to students with
+                special interests. Students will select areas of study in consultation with an appropriate faculty
+                member. Prerequisites: 78 credits including AP/ADMS 1000 3.00, AP/ECON 1000 3.00, AP/ECON 1010 3.00, and
+                six credits in management science. Open only to students in Honours programs. Note: Students must be
+                accepted by a faculty supervisor before they can register in 4000-level directed reading courses. The
+                course transaction form for such courses must be submitted with a note from the supervisor stating
+                his/her willingness to perform this task. Permission of the Director of the School of Administrative
+                Studies is also required.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4510" style="left: 30em; top: 72.0em;" prereq="adms3595 econ1000">
+            <span class="course-code-full">ADMS 4510 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Accounting Theory and Contemporary Issues</span>
+            <div class="course-description" hidden="hidden">Examines the nature of accounting, accounting theory and the
+                extent to which it applies to current accounting practice as well as certain contemporary issues in
+                accounting. The preparation of paper-critique/case-analysis reports is also required. Prerequisites: 1)
+                For students in an Honours program, 78 credits including AP/ADMS 3595 3.00, AP/ECON 1000 3.00, or 2) for
+                other students, these above-listed courses and an average grade of C+ or better in AP/ADMS 3585 3.00 and
+                AP/ADMS 3595 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4520" style="left: 44em; top: 72.0em;" prereq="adms3595 econ1000">
+            <span class="course-code-full">ADMS 4520 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Advanced Financial Accounting</span>
+            <div class="course-description" hidden="hidden">This final financial accounting course emphasizes accounting
+                for international activities and inter-corporate investments. The application of accounting principles
+                to case situations in specialized industries and non-profit organizations is also considered.
+                Prerequisites: 1) For students in an Honours program, 78 credits including AP/ADMS 3595 3.00, AP/ECON
+                1000 3.00, or 2) for other students, these above-listed courses and an average grade of C+ or better in
+                AP/ADMS 3585 3.00 and AP/ADMS 3595 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4515" style="left: 58em; top: 72.0em;"
+            prereq="adms2500 adms2510 adms2511">
+            <span class="course-code-full">ADMS 4515 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Internal Audit</span>
+            <div class="course-description" hidden="hidden">Introduces students to the objectives, concepts, principles
+                and techniques of internal and management auditing, as applied to profit-pursuing, non-profit and
+                government organizations. Prerequisites: 1) For students in an Honours program, 78 credits including
+                AP/ADMS 2500 3.00, AP/ADMS 2510 3.00 and AP/ADMS 2511 3.00; or 2) For other students, the above listed
+                courses and an average grade of C+ or better in AP/ADMS 2500 3.00 and AP/ADMS 2510 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4551" style="left: 72em; top: 72.0em;"
+            prereq="adms2511 adms3585 econ1000">
+            <span class="course-code-full">ADMS 4551 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Auditing and Other Assurance Services</span>
+            <div class="course-description" hidden="hidden">Examines audit concepts and techniques. Coverage will
+                include audit theory, the timing, nature and extent of audit testing, audit procedures and the
+                application and interpretation of statistics in an audit context. Prerequisites: 1) For students in an
+                Honours program, 78 credits including AP/ADMS 2511 3.00, AP/ADMS 3585 3.00 and AP/ECON 1000 3.00, or 2)
+                for other students, these above-listed courses and an average grade of C+ or better and AP/ADMS 3585
+                3.00. AP/ADMS 4535 3.00 is not required, but strongly recommended.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4561" style="left: 2em; top: 79.0em;" prereq="adms3520">
+            <span class="course-code-full">ADMS 4561 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Taxation Of Personal Income in Canada</span>
+            <div class="course-description" hidden="hidden">Together with AP/ADMS 4562 3.00, introduces students to the
+                principles and practice of Canadian taxation and related tax planning. Enables students to achieve a
+                basic understanding of the Canadian Income Tax Act and its GST implications in relation to the
+                individual. Prerequisites: 1) For students in an Honours program, 78 credits including AP/ADMS 3520
+                3.00; 2) or for other students, a grade of C+ or better in the above-listed course.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4540" style="left: 16em; top: 79.0em;" prereq="adms3530 adms2320">
+            <span class="course-code-full">ADMS 4540 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Financial Management</span>
+            <div class="course-description" hidden="hidden">Building upon introductory knowledge from AP/ADMS 3530 3.00,
+                the course covers bond duration and refunding, risk and return, capital budgeting under uncertainty,
+                capital structure, dividend policy and risk management. Empirical evidence on corporate finance theories
+                will also be analyzed. Prerequisites: 1) For students in an Honours program, 78 credits including
+                AP/ADMS 3530 3.00, AP/ADMS 2320 3.00, or 2) for other students, these above-listed courses and a grade
+                of C+ or better in AP/ADMS 3530 3.00. Course credit exclusion: AP/ECON 4410 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4562" style="left: 30em; top: 79.0em;" prereq="adms3520">
+            <span class="course-code-full">ADMS 4562 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Corporate Taxation in Canada</span>
+            <div class="course-description" hidden="hidden">Together with AP/ADMS 4561 3.00, introduces students to the
+                principles and practice of Canadian taxation and related tax planning. Enables students to achieve a
+                basic understanding of the Canadian Income Tax Act and its GST implications in relation to corporations,
+                partnerships and trusts. Prerequisites: 1) For students in an Honours program, 78 credits including
+                AP/ADMS 3520 3.00; 2) or for other students, a grade of C+ or better in the above-listed course.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4570" style="left: 44em; top: 79.0em;"
+            prereq="adms3510 adms2320 adms3351">
+            <span class="course-code-full">ADMS 4570 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Management Planning and Control Systems</span>
+            <div class="course-description" hidden="hidden">A study of the process by which managers ensure that
+                resources are obtained and used efficiently and effectively in accomplishing organizational objectives.
+                Readings in cost accounting, finance, business policy and social psychology are applied to analyze case
+                studies of actual situations. Prerequisites: 1) For students in an Honours program, 78 credits including
+                AP/ADMS 3510 3.00, AP/ADMS 2320 3.00 and AP/ADMS 3351 3.00 (or ADMS 3330 prior to Fall 2019) or 2) for
+                other students, these above-listed courses and a grade of C+ or better in AP/ADMS 3510 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4590" style="left: 2em; top: 86.0em;"
+            prereq="adms3510 adms3530 adms4510 adms4551 adms4561">
+            <span class="course-code-full">ADMS 4590 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Comprehensive and Multi-subject Accounting
+                Problems</span>
+            <div class="course-description" hidden="hidden">This course enables students to apply their technical
+                knowledge to complex accounting problems. Students will be required to interrelate the knowledge
+                obtained from individual subject areas in order to identify problems, analyze data and formulate
+                recommendations for action. Prerequisites: 1) For students in an Honours program, 78 credits including
+                AP/ADMS 3510 3.00, AP/ADMS 3530 3.00, AP/ADMS 4510 3.00 (or AP/ADMS 4511 3.00 or AP/ADMS 4520 3.00),
+                AP/ADMS 4551 3.00 (or AP/ADMS 4515 3.00), and AP/ADMS 4561 3.00 (or AP/ADMS 3520 3.00) or 2) for other
+                students, these above-listed courses and an average grade of C+ or better in AP/ADMS 3585 3.00 and
+                AP/ADMS 3595 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4552" style="left: 16em; top: 86.0em;" prereq="adms4551 adms2511">
+            <span class="course-code-full">ADMS 4552 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Information Systems Audits</span>
+            <div class="course-description" hidden="hidden">Covers the audit of computer-based information systems.
+                Topics include business/accounting information system applications, information systems risks,
+                management controls, control evaluation, audit strategies and computer assisted audit techniques.
+                Prerequisites: 1) For students in the Honours program, 78 credits including AP/ADMS 4551 3.00; and
+                AP/ADMS 2511 3.00 or 2) other students, these above-listed courses and an average grade of C+ or better
+                in AP/ADMS 3585 3.00.</div>
+        </div>
+
+        <div class="classBox adms" id="adms4553" style="left: 30em; top: 86.0em;" prereq="adms3595 adms4551">
+            <span class="course-code-full">ADMS 4553 (3.00)</span><br>
+            <span class="course-name" style="font-size:1.0em;">Auditing: Advanced Topics</span>
+            <div class="course-description" hidden="hidden">Examines current and/or advanced issues affecting the audit
+                profession. Coverage includes the public's expectation of audits and various types of engagements
+                including: special reports, non-audits, prospectuses, future oriented financial statements and
+                comprehensive audits. Prerequisites: 1) For students in an Honours program, 78 credits including AP/ADMS
+                3595 3.00, AP/ADMS 4551 3.00, or 2) or other students, these above-listed courses and an average grade
+                of C+ or better in AP/ADMS 3585 3.00 and AP/ADMS 3595 3.00.</div>
+        </div>
+
+
+    </div>
+    <div id="explain">
+        <div id="explain-main" style="display: none;">
+            <div id="explain-topp">
+                ADMS 2320 (3.00)<br>
+                Business Statistics
+            </div>
+            <div id="explain-desc">
+            </div>
+            <div id="explain-prereq-list-div">
+                Prerequsites:
+                <ul id="explain-prereq-list">
+                </ul>
+            </div>
+        </div>
+        <div id="explain-hint">Click on a course to see its description here</div>
+    </div>
+
+    <div id="settings-bar">
+        <div id="zoom-size-div">
+            Zoom: <span id="zoom-value">1</span>x<br>
+            <input type="range" id="zoom-range-slider" min="0.35" max="2.0" value="1.0" step="0.05">
+        </div>
+    </div>
+
+</body>
+
+</html>
