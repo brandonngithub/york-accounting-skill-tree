@@ -4,12 +4,12 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     background: rgb(59, 70, 78);
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 html {
     background: rgb(59, 70, 78);
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .titl {
@@ -18,10 +18,11 @@ html {
     font-size: 2em;
     position: relative;
     font-weight: normal;
-    left: 8rem;
+    left: auto;
     color: rgb(255, 255, 255);
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
 }
 
 div#root {
@@ -100,14 +101,14 @@ div#explain-hint {
 }
 
 div#settings-bar {
-    position: relative;
-    text-align: right;
+    position: static;
+    text-align: center;
     padding: 1rem;
     font-family: sans-serif;
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: center;
     vertical-align: middle;
-    margin: 0 16px 0 2rem;
+    margin: 0;
 }
 
 div#zoom-size-div {
@@ -136,10 +137,21 @@ div#zoom-size-div {
 .wide-bg-colour {
     text-align: left;
     background-color: rgb(59, 70, 78);
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 2;
     padding: 4px;
     margin-bottom: 56px;
+}
+
+div#explain {
+    align-self: stretch;
+    box-sizing: border-box;
 }
 
 #zoom-value {
@@ -148,9 +160,7 @@ div#zoom-size-div {
 
 @media (min-width: 1100px) {
     div#settings-bar {
-        position: absolute;
-        top: 1.5rem;
-        right: 16px;
+        position: static;
         margin: 0;
     }
 }
